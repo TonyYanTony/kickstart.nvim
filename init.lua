@@ -928,9 +928,8 @@ require('lazy').setup({
       statusline.section_location = function()
         return '%2l:%-2v'
       end
-
-      -- ... and there is more!
-      --  Check out: https://github.com/echasnovski/mini.nvim
+      require('mini.comment').setup()
+      require('mini.starter').setup()
     end,
   },
   { -- Highlight, edit, and navigate code
